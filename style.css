@@ -4,24 +4,71 @@ body{
 
     /* to remove the default scroll */
     overflow: hidden;
+
+    font-size:14;
 }
 *{
     box-sizing: border-box;
+    
 }
 .container{
     height: 100vh;
-    border: 2px solid red;
 }
 
 .title-bar{
     height: 5vh;
+    background-color: #107c41;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
 }
 .menu-bar{
     height: 5vh;
+    display: flex;
+    background-color: #107c41;
+
 }
+.menu-items{
+    color:#ffff;
+    display: flex;
+    padding-left:10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.menu-items.selected{
+    background-color: #ffff;
+    color:#107c41;
+}
+.menu-items:hover{
+    cursor:pointer;
+    background-color: #094725;
+}
+.menu-items.selected:hover{
+    cursor:default;
+    background-color: #ffff;
+}
+
+
 .menu-icon-bar{
     height: 6vh;
+    background-color: rgb(241, 239, 239);
+    display: flex;
+    
 }
+.menu-icon{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;    
+}
+.menu-icon:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
 .formula-bar{
     height: 6vh;
 }
